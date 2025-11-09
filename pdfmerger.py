@@ -2,7 +2,7 @@ import streamlit as st
 from PyPDF2 import PdfMerger
 from io import BytesIO
 
-st.title("📚 PDF Merger by Javeria Tariq xD")
+st.title("📚 PDF Merger")
 st.write("Upload up to 100 PDF files to merge them into one.")
 
 uploaded_files = st.file_uploader("Choose PDF files", type="pdf", accept_multiple_files=True)
@@ -28,3 +28,4 @@ if uploaded_files:
                 file_name="merged.pdf",
                 mime="application/pdf"
             )
+
